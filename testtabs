@@ -1,0 +1,159 @@
+
+<html>
+    <head>
+        <title>Our Team Page Section Test</title>
+        <style>
+            .people-section{
+                background-color: #F3F3F3;
+                display: flex;
+                height: 567px;
+            }
+            .team-innersec{
+                display: none;
+            }
+            .btnteam {
+                background-color: yellow;
+                border-radius: 40px;
+                border: 0px;
+                margin-top: 20px;
+                padding: 10px;
+            
+            }
+            .btnteam h2{
+                transform-origin: 0px 100%;
+                transform: rotate(-90deg)
+            }
+            .team-content{
+                padding: 30px;
+                width: 100%;
+                margin: auto;
+            }
+            .btn-people{
+                background-color:#F3F3F3;
+                width:50px;
+                padding: 10 0 2 0;
+                text-align: center;
+            }
+            .btnvert{
+                writing-mode: tb-rl;
+                height: 90%;
+                transform: rotate(-180deg) translate(9px, 0px);
+                text-align: right;
+            
+            }  
+            .btn-office {
+                background-color:#E8E8E7;
+                width:50px;
+                padding: 10 0 2 0;
+                text-align: center;
+            }
+            .btn-culture {
+                background-color:#DEDEDE;
+                width:50px;
+                padding: 10 0 2 0;
+                text-align: center;
+            }
+            .btn-community {
+                background-color:#D0D0CF;
+                width:50px;
+                padding: 10 0 2 0;
+                text-align: center;
+            }
+           
+            .team-img{
+                height: 567px;
+                margin: auto;
+            }
+            .tspan{
+                border: 1px solid black;
+                padding: 3px 8px;
+                border-radius: 50%;
+            }
+            
+        </style>
+    </head>
+    <body>
+    <div class="people-section">
+        
+        <div class="btn-people" onclick="openPage('tteam')" id="defaultOpen">
+            <h2 class="btnvert">Our People</h2>
+            <span class="tspan">1</span>
+        </div>
+        <div id="tteam" class="team-innersec" style="display: flex;">
+                <div class="team-content">
+                    <h5>- TEAM</h5>
+                    <h2>Speak to the makeup of the team</h2>
+                    <p>Speak to the makeup of the team Speak to the makeup of the team Speak to the makeup of the team Speak to the makeup of the team</p>
+                    <button class="btnteam">Read More &#xf30b;</button>
+                </div>
+                <div class="team-img">
+                    <img src="http://backbobne.redxwebsolutions.ca/wp-content/uploads/2023/07/Image-6.png" height="100%"/>
+                </div>
+        </div>
+
+        <div class="btn-office" onclick="openPage('toffice')">
+            <h2 class="btnvert">Our Office</h2>
+            <span class="tspan">2</span>
+        </div>    
+        <div id="toffice" class="team-innersec">
+                <div class="team-content">
+                    <h5>- OFFICE</h5>
+                    <h2>Speak to the makeup of the team</h2>
+                    <p>Speak to the makeup of the team Speak to the makeup of the team Speak to the makeup of the team Speak to the makeup of the team</p>
+                    <button class="btnteam">Read More	&#xf30b;</button>                    
+                </div>
+                <div class="team-img">
+                    <img src="http://backbobne.redxwebsolutions.ca/wp-content/uploads/2023/07/Image-6.png" height="100%"/>
+                </div>
+        </div>
+
+        <div class="btn-culture" onclick="openPage('tculture')">
+            <h2 class="btnvert">Our Culture</h2>
+            <span class="tspan">3</span>
+        </div>    
+        <div id="tculture" class="team-innersec">
+                <div class="team-content">
+                    <h5>- CULTURE</h5>
+                    <h2>Speak to the makeup of the team</h2>
+                    <p>Speak to the makeup of the team Speak to the makeup of the team Speak to the makeup of the team Speak to the makeup of the team</p>
+                    <button class="btnteam">Read More	&#xf30b;</button>                    
+                </div>
+                <div class="team-img">
+                    <img src="http://backbobne.redxwebsolutions.ca/wp-content/uploads/2023/07/Image-6.png" height="100%"/>
+                </div>
+        </div>
+
+        <div class="btn-community" onclick="openPage('tcommunity')">
+            <h2 class="btnvert">Our Community</h2>
+            <span class="tspan">4</span>
+        </div>
+        <div id="tcommunity" class="team-innersec">
+            <div class="team-content">
+                <h5>- COMMUNITY</h5>
+                <h2>Speak to the makeup of the team</h2>
+                <p>Speak to the makeup of the team Speak to the makeup of the team Speak to the makeup of the team Speak to the makeup of the team</p>
+                <button class="btnteam">Read More	&#xf30b;</button>                  
+            </div>          
+            <div class="team-img">
+                <img src="http://backbobne.redxwebsolutions.ca/wp-content/uploads/2023/07/Image-6.png" height="100%"/>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPage(pageName) {
+          var i, tabcontent
+          tabcontent = document.getElementsByClassName("team-innersec");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          document.getElementById(pageName).style.display = "flex";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+
+    </body>
+</html>
